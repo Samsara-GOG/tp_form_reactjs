@@ -1,0 +1,39 @@
+body {
+    margin: 0;
+}
+
+.root {
+    margin-left: 20px;
+    color: grey;
+}
+
+.btn {
+    color: white;
+    border-color: rgba(0, 91, 255, 1);
+    background-color: rgba(0, 91, 255, 1);
+    padding: 10px;
+    border-radius: 4px;
+    margin-top: 10px;
+    width: 100px;
+    font-weight: bold;
+}
+
+.title {
+    font-size: 0.9rem;
+    color: black;
+    font-weight: bold;
+}
+
+input {
+    padding: 10px;
+    margin-bottom: 10px;
+    width: 286px;
+    font-size: 0.8rem;
+}
+
+textarea {
+    padding: 10px;
+    height: 100px;
+    width: 300px;
+    font-size: 0.8rem;
+}
