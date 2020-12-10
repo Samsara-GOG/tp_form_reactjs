@@ -15,40 +15,38 @@ class App extends React.Component {
 
     state = {
         name: "",
-        comment: "",
-        object: {},
+        message: "",
         comments: []
     }
 
     handleName = (event) => {
-        // console.log(event.target.value);
-
         this.setState({
             name: event.target.value
         })
     }
 
-    handleComment = (event) => {
-        // console.log(event.target.value);
-
+    handleMessage = (event) => {
         this.setState({
-            comment: event.target.value
+            message: event.target.value
         })
     }
 
     handleSubmit = (event) => {
         event.preventDefault();
 
-        // const tmp1
-        // const tmp2
-        // const tmp3        
-
-        const tmp1 = this.state.comments.concat(`name: ${this.state.name}`, `message: ${this.state.comment}`);        
+        // creation de l'objet comment
+        const comment = {
+            name: this.state.name,
+            message: this.state.message
+        }
+        // console.log(comment);
+    
+        // On concatène le tableau vide comments avec l'objet comment
+        const tmp = this.state.comments.concat(comment);        
 
         this.setState({
-            comments: tmp1
+            comments: tmp
         })
-
     }
 
     render() {
@@ -63,9 +61,9 @@ class App extends React.Component {
                         placeholder="Your Name"></input>
                     </div>
                     <div>
-                        <textarea name="comment" cols="" rows="" 
-                        value={this.state.comment} 
-                        onChange={this.handleComment}
+                        <textarea name="message" cols="" rows="" 
+                        value={this.state.message} 
+                        onChange={this.handleMessage}
                         placeholder="Your Comment"></textarea>
                     </div>
                     <div>
@@ -73,8 +71,8 @@ class App extends React.Component {
                     </div>
                 </form>
             </div>
-    )   
-}
+        )   
+    }
 }
 
 ReactDOM.render(<App/>, document.getElementById('app'));
