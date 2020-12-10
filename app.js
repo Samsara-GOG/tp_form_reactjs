@@ -58,7 +58,7 @@ class App extends React.Component {
                         <input type="text"  name="name" 
                         value={this.state.name}
                         onChange={this.handleName}
-                        placeholder="Your Name"></input>
+                        placeholder="Your Name"/>
                     </div>
                     <div>
                         <textarea name="message" cols="" rows="" 
@@ -67,7 +67,7 @@ class App extends React.Component {
                         placeholder="Your Comment"></textarea>
                     </div>
                     <div>
-                        <input className="btn" type="submit" value="Comment >"></input>
+                        <input className="btn" type="submit" value="Comment >"/>
                     </div>
                 </form>
             </div>
