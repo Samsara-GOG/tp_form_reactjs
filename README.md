@@ -1,6 +1,6 @@
 # TP Formulaire ReactJS
 
-**Consignes : Reproduire ce formulaire en HTML/CSS + ReactJS** [cette image](https://github.com/Samsara-GOG/tp_form_reactjs/blob/master/reactjs-form.png)
+**Consignes : Reproduire ce formulaire en HTML/CSS + ReactJS** d'après [cette image](https://github.com/Samsara-GOG/tp_form_reactjs/blob/master/reactjs-form.png)
 
 A la soumission du formulaire, ajouter les données entrantes dans un tableau "comments" situé dans l'objet state.  
 Ex:  
